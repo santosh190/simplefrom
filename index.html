@@ -31,8 +31,12 @@
    </div>
   </div>
 <script>
-   document.getElementById("items").style.fontWeight="bold";
-  document.getElementById("it-3").style.backgroundColor="green";
+   var list=document.getElementById("items");
+   
+   var ele = document.createElement('li');
+   ele.appendChild(document.createTextNode("Item 5"));
+   ele.classList.add("list-group-item");
+   list.appendChild(ele);
 </script>
 </body>
 </html>
