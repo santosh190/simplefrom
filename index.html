@@ -24,19 +24,17 @@
     <h2 class="title">Items</h2>
     <ul id="items" class="list-group">
       <li class="list-group-item">Item 1</li>
-      <li class="list-group-item">Item 2</li>
-      <li id="it-3" class="list-group-item">Item 3</li>
+      <li id="it-2" class="list-group-item">Item 2</li>
+      <li class="list-group-item">Item 3</li>
       <li class="list-group-item">Item 4</li>
     </ul>
    </div>
   </div>
 <script>
-   var list=document.getElementById("items");
    
-   var ele = document.createElement('li');
-   ele.appendChild(document.createTextNode("Item 5"));
-   ele.classList.add("list-group-item");
-   list.appendChild(ele);
+ const o=document.querySelectorAll(".list-group");
+ o[1].style.background="green";
+    console.log(o);  
 </script>
 </body>
 </html>
